@@ -1,0 +1,7 @@
+.vscode
+!.vscode/launch.json
+!.vscode/tasks.json
+clang-cdm-macos-latest
+**/*.dSYM
+*.out
+.DS_Store

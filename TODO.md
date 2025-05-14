@@ -1,0 +1,7 @@
+- [ ] end game when all ceils is dead
+- [X] rewrite Makefile (filename patterns)
+- [ ] add target "test"
+- [ ] ? add ability to edit field when game is paused
+- [X] erase ceil in edit mode
+- [ ] PAUSE stops game at any time (now - after game cycle ends)
+- [X] labels???
