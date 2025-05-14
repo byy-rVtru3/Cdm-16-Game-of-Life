@@ -1,0 +1,40 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "(lldb) Launch :)",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${fileDirname}/a.out",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${fileDirname}",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "lldb",
+      "preLaunchTask": "C build active file"
+    },
+    {
+      "name": "Debug CdM-16 with Von Neumann architecture",
+      "type": "cdm",
+      "request": "launch",
+      "address": "ws://localhost:7001",
+      "target": "cdm16",
+      "architecture": "vonNeumann",
+      "environment": "external",
+      "artifacts": {
+        "image": "${workspaceFolder}${/}build${/}out.img",
+        "debug": "${workspaceFolder}${/}build${/}out.dbg.json"
+      },
+      "preLaunchTask": "MAKE"
+    },
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/annashemchuk/repos/Logisim_Game_of_Life",
+      "program": "/Users/annashemchuk/repos/Logisim_Game_of_Life/build/Debug/outDebug"
+    }
+  ]
+}
